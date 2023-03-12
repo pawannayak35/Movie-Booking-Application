@@ -1,0 +1,119 @@
+/* home start here */
+.cont {
+    color: white;
+}
+
+.left-side {
+    padding-top: 8rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 550px) {
+  .left-side {
+    display: none;
+}
+  
+}
+
+.genres-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.genres-link:hover {
+    color: #fff;
+    background-color: #cb07f7;
+    /* padding: 2px; */
+    border-radius: 1rem;
+
+}
+/* home end here */
+
+.card {
+    background-color: transparent;
+ transition: 0.5s ease-out;
+ overflow: visible;
+}
+
+.card-body {
+ background-color: #cb07f7;
+ color: #fff;
+ position: absolute;
+ bottom: 0;
+ opacity: 0;
+ transition: 0.3s ease-out;
+ width: 100%;
+
+}
+
+.card:hover {
+
+ box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card:hover .card-body {
+ opacity: 1;
+}
+
+
+  .rating{
+    position: relative;
+    display: flex;
+  
+  }
+  
+  .capital-text {
+    text-transform: uppercase;
+  }
+
+
+/* Modal */
+.cus-modal-body {
+  color: #fff;
+  background-color: #000;
+  border: 1px solid white;
+}
+.btn-x {
+  color: #fff;
+  margin-left: 96%;
+  font-size: 23px;
+  font-weight: bold;
+  cursor: pointer;
+  
+
+}
+.btn-x:hover {
+  color: red; 
+}
+
+  
+  #checkHeading{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+  }
+  #formBody{
+    width: 940px;
+    border: 2px solid #fff;
+    padding: 8px; 
+  }
+  .payment-class{
+    align-items: center;
+    display: flex;
+    justify-content: center; 
+  }
+  #summary{
+    width: 400px;
+   
+  }
+  .payment-radio{
+    
+    display: flex;
+    position: relative;
+  
+  }
+  .sum-form-data {
+    display: flex;
+  
+  }

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/checkout.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <section class="check-page">
+        <h1 id="checkHeading">CHECKOUT</h1>
+        <div class="payment-class">
+            <form id="formBody">
+                <h1>Summary</h1>
+                <h3 id="movie-name">Movie Name</h3>
+                <div class="sum-form-data">
+                    <p>Classic Ticket</p>
+                    <p class="ms-auto" id="ticket-price">₹ </p>
+                </div>
+                <label>Number of tickets</label><input type="number" aria-label="First name" class="form-control">
+                <div class="sum-form-data">
+                    <p>Convenience Fee (1.75%)</p>
+                    <p class="ms-auto" id="conFee">₹ </p>
+                </div>
+                <div class="sum-form-data">
+                    <p>Sub total</p>
+                    <p class="ms-auto" id="tolPrice">₹ </p>
+                </div>
+
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary" type="button" data-bs-toggle="modal"
+                        data-bs-target="#proceedToPay">Proceed to pay</button>
+                </div>
+            </form>
+
+            <div class="modal fade" id="proceedToPay" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content cus-mod-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title">Payment</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="index.html" onsubmit="alert('You Ticket Booked Successfully')">
+
+                                <div class="input-group">
+                                    <label>First name</label>
+                                    <input type="text" class="form-control ms-1 me-1" required>
+                                    <label>Last name</label>
+                                    <input type="text" class="form-control ms-1 me-1" required>
+                                    <label>Email</label>
+                                    <input type="email" class="form-control ms-1" placeholder="you@example.com" required>
+                                </div>
+                                <div class="payment-radio">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="pay-type" id="pay1" required>
+                                        <label class="form-check-label">Credit card</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input ms-1" type="radio" name="pay-type" id="pay2" required>
+                                        <label class="form-check-label ms-1">Debit card</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input ms-1" type="radio" name="pay-type" id="pay3" required>
+                                        <label class="form-check-label ms-1">UPI</label>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label> Name on card</label>
+                                    <input type="text" class="form-control" required>
+                                    <figcaption class="figure-caption">Full name as displayed on card</figcaption>
+                                </div>
+                                <div>
+                                    <label>Credit card number</label>
+                                    <input type="number" class="form-control" required>
+                                </div>
+                                <div>
+                                    <label>Expiration</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                                <div>
+                                    <label>CVV</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                                <br>
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-primary" type="submit" >Pay Now</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+    <script src="./js/home.js"></script>
+    <script src="./js/checkout.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
