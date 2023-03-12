@@ -19,6 +19,7 @@
     text-decoration: none;
     color: #fff;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .genres-link:hover {
